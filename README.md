@@ -32,5 +32,3 @@
 - 圖片請放在 public/img/<自己的資料夾>
 
 - 大家統一用 npm 管理套件
-# ju4t_fronted
-# ju4t_fronted

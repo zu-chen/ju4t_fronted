@@ -1,0 +1,77 @@
+// .doubleSquareBackGround {
+//   position: absolute;
+//   left: -20px;
+//   bottom: 0%;
+//   z-index: -1;
+// }
+
+#myShareContent {
+  position: absolute;
+  text-align: center;
+}
+
+#myShareBackGround {
+  max-width: 100%;
+  z-index: -1;
+  text-align: center;
+  justify-content: center;
+}
+
+.uploadImgDiv {
+  margin-top: 5%;
+}
+
+.uploadImg {
+  max-width: 20vw;
+}
+
+.morelargeTitle {
+  font-size: 10vh;
+  color: #707070;
+}
+
+.morelargeTitle {
+  font-size: 5vw;
+  color: #707070;
+}
+
+.moreSmallTitle {
+  width: 80vw;
+  // text-align: center;
+  // margin-bottom: 30%;
+  margin: 0 auto;
+}
+
+.checkboxSpan {
+  font-family: TC;
+  color: #707070;
+  font-size: 1vw;
+}
+
+@media screen and (max-width: 580px) {
+  .moreSmallTitle {
+    width: 90vw;
+    text-align: center;
+  }
+
+  .uploadBtnMD.btn.md {
+    width: 89px;
+    height: 30px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .uploadImgDiv {
+    margin-top: 0%;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .uploadImg {
+    width: 147px;
+  }
+  .morelargeTitle {
+    font-size: 5vw;
+  }
+}

@@ -1,0 +1,83 @@
+$MYPORT: "http://localhost:3000/";
+
+.socialContainer {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-image: url($MYPORT + "/img/social/indexBackGround.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  z-index: -2;
+}
+
+.socialActivityImgL {
+  margin: 9% auto;
+  max-width: 100%;
+  z-index: -1;
+}
+
+.socialActivityImgM {
+  margin: 9% auto;
+  max-width: 100%;
+  z-index: -1;
+  display: none;
+}
+
+#P1 {
+  border: 0;
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  z-index: 1;
+  height: 350px;
+  width: 350px;
+}
+#P2 {
+  border: 0;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+  height: 350px;
+  width: 350px;
+}
+#P3 {
+  border: 0;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  z-index: -1;
+  height: 350px;
+  width: 350px;
+}
+
+.manyCard {
+  border: none;
+  margin: auto;
+  position: relative;
+}
+
+.sociaCardMoreIcon {
+  width: 8vw;
+}
+
+@media screen and (max-width: 630px) {
+  #P1 {
+    height: 300px;
+    width: 300px;
+  }
+  #P2 {
+    height: 300px;
+    width: 300px;
+  }
+  #P3 {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .sociaCardMoreIcon {
+    width: 20vw;
+  }
+}

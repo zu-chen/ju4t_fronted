@@ -1,0 +1,134 @@
+.fixed {
+  border: 1px solid transparent;
+  width: 5vw;
+  height: 5vw;
+  left: 90%;
+  bottom: 20%;
+  border-radius: 50%;
+  background-color: #e7e6e3de;
+}
+
+.toTop {
+  font-size: 3vw;
+}
+
+.circleBackGround {
+  position: absolute;
+  max-width: 100%;
+  right: 5%;
+  top: 1%;
+  z-index: -1;
+}
+
+.hoverAllTag {
+  display: none;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  width: 10vmin;
+  height: 46vmin;
+  background-color: #edd4c4;
+  border-radius: 10px;
+  font-size: 3vw;
+  padding: 3% 0;
+
+  a {
+    color: #707070;
+    font-size: 7vmin;
+  }
+
+  p {
+    color: #707070;
+    font-size: 4vmin;
+    font-weight: lighter;
+    margin: 0 auto;
+  }
+}
+
+#cardCard:hover .hoverAllTag {
+  display: block;
+}
+
+#cardCard {
+  border: none;
+  position: relative;
+  background-color: transparent;
+}
+
+#cardImg {
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 1199px) {
+  .hoverAllTag {
+    // display: block;
+    width: 8vmin;
+    height: 28vmin;
+
+    a {
+      font-size: 4vmin;
+    }
+
+    p {
+      font-size: 3vmin;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .hoverAllTag {
+    width: 7vmin;
+    height: 28vmin;
+
+    a {
+      font-size: 4vmin;
+    }
+
+    p {
+      font-size: 3vmin;
+    }
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .circleBackGround {
+    position: absolute;
+    width: 250px;
+    right: 10%;
+    top: 3%;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .circleBackGround {
+    position: absolute;
+    width: 250px;
+    top: 150px;
+    z-index: -1;
+  }
+
+  .hoverAllTag {
+    width: 15vmin;
+    height: 52vmin;
+
+    a {
+      font-size: 7.5vmin;
+    }
+
+    p {
+      font-size: 4vmin;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .fixed {
+    width: 15vw;
+    height: 15vw;
+    left: 80%;
+    .toTop {
+      font-size: 8vw;
+    }
+  }
+}

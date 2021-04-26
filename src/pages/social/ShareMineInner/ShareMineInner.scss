@@ -1,0 +1,83 @@
+.allBox {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+}
+
+.box1,
+.box2 {
+  width: 30vh;
+  height: 30vh;
+  margin: 10px;
+}
+
+.box2 {
+  background-color: #e0dbd5;
+}
+
+.checkboxP1 {
+  font-family: TC;
+  color: #707070;
+  font-size: 1vw;
+  margin-top: 8vh;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.checkboxP2 {
+  font-size: 2vw;
+  color: #707070;
+}
+
+.shareMineInnerContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.shareSquareBackGroundLeft {
+  position: absolute;
+  left: 8%;
+  top: -50px;
+  height: 40%;
+}
+
+.shareSquareBackGroundRight {
+  position: absolute;
+  right: 8%;
+  bottom: -50px;
+  height: 40%;
+}
+
+#shareImg {
+  display: block;
+  margin: auto;
+  width: 70%;
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #shareRight {
+    padding-top: 15%;
+  }
+
+  .box1 {
+    margin: 10px 10px 10px auto;
+  }
+
+  .box2 {
+    margin: 10px auto 10px 10px;
+  }
+
+  .checkboxP1 {
+    font-size: 12px;
+  }
+
+  .checkboxP2 {
+    font-size: 20px;
+  }
+}

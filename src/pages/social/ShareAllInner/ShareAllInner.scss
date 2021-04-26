@@ -1,0 +1,82 @@
+$MYPORT: "http://localhost:3000/";
+
+.ShareAllInnerDiv {
+  display: flex;
+  justify-content: center;
+  margin: 5% auto;
+}
+
+.squareBackGroundLeft {
+  position: absolute;
+  left: -20px;
+  bottom: 0%;
+  z-index: -1;
+}
+
+.squareBackGroundRight {
+  position: absolute;
+  left: 90%;
+  top: 0px;
+  z-index: -1;
+  object-fit: cover;
+}
+
+#portfolioLeft {
+  margin: auto 0 auto auto;
+}
+
+#portfolioRight {
+  img {
+    display: block;
+    margin: auto;
+  }
+}
+
+#portfolioIcon {
+  margin-top: 20%;
+}
+
+#shareImg {
+  display: block;
+  margin: auto;
+}
+
+.leftControl {
+  left: 0%;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  z-index: 998;
+  // cursor: url($MYPORT + "/img/social/left-arrow.png"), move;
+  cursor: url("https://static1.squarespace.com/static/554b5e7ce4b0149371f10a93/t/5979c5e9e4fcb5787a05f166/1501152745101/left.png"),
+    default;
+}
+
+.rightControl {
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  z-index: 998;
+  // cursor: url($MYPORT + "/img/social/right-arrow.png"), move;
+  cursor: url("https://static1.squarespace.com/static/554b5e7ce4b0149371f10a93/t/5979c5fbe45a7c1cf8ecff86/1501152763896/right3.png"),
+    default;
+}
+
+@media screen and (max-width: 767px) {
+  .ShareAllInnerDiv {
+    display: block;
+    // justify-content: center;
+    // margin: 5% auto;
+  }
+
+  #portfolioRight {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .squareBackGroundRight {
+    left: 75%;
+  }
+}

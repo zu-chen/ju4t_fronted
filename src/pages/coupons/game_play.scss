@@ -1,0 +1,181 @@
+$MYPORT: "http://localhost:3000/";
+
+.gameplay-background {
+  background: url($MYPORT + "/img/coupons/game_1背景.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  // outline: 2px solid black;
+  position: relative;
+}
+.gameplay-background {
+  margin: 0px;
+  // padding-bottom: 1000px;
+  // outline: 2px solid black;
+}
+.phonecase-fram {
+  width: 500px;
+  height: auto;
+  // outline: solid black 2px;
+  margin-bottom: 50px;
+}
+//卡片
+.card-container {
+  // outline: 2px solid black;
+  width: 80px;
+  height: 135px;
+  position: relative;
+  //控制3D效果
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  // 點擊特效
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+//控制點擊特效
+.card-container :active {
+  transform: scale(0.97);
+  transition: 0.2s;
+}
+
+//翻牌特效
+.card-container.flip {
+  transform: rotateY(180deg);
+}
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.back {
+  /* transform: rotateY(0deg); */
+  /* 因為前面用成透明3D的原因，因此將反轉過程中的後面隱藏起來 */
+  backface-visibility: hidden;
+}
+.result-fram {
+  width: 500px;
+  height: auto;
+  margin-bottom: 100px;
+  // outline: 2px solid black;
+}
+.phonecase {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+.result-fram-phone {
+  height: 200px;
+  width: 100%;
+  align-items: center;
+  // outline: 2px solid black;
+}
+//控制結果版面
+.result-item {
+  margin: 0 auto;
+  margin-top: 10px;
+  height: auto;
+}
+.item-clock {
+  background-image: url($MYPORT + "/img/coupons/clock.png");
+  background-size: cover;
+  width: 120px;
+  height: 135px;
+  margin-top: 40px;
+  //   outline: 2px solid black;
+}
+//剩餘秒數
+.clock-time {
+  //   outline: 2px solid rgb(218, 70, 70);
+  text-align: center;
+  font-size: 50px;
+  padding-top: 50px;
+}
+//目前得分
+.item-text {
+  text-align: center;
+  width: 90px;
+  height: auto;
+  margin-top: 80px;
+}
+.item-socer {
+  width: 200px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+}
+
+.item-btn {
+  width: 200px;
+  height: 70px;
+  // margin-top: 100px;
+  // margin-left: 130px;
+  margin: 100px auto 0 auto;
+  // outline: 2px solid black;
+}
+//得分顯示
+.socer {
+  text-align: center;
+  font-size: 76px;
+  padding-top: 10px;
+}
+.modal-container {
+  width: 600px;
+  height: 584px;
+  // outline: 2px solid rgb(218, 70, 70);
+  justify-content: center;
+  background: url($MYPORT + "/img/coupons/9折折價券.png") no-repeat;
+  text-align: center;
+  background-size: contain;
+  overflow: hidden;
+  position: fixed;
+  position: absolute;
+  transform: translateY(-625px);
+  // pointer-events: none;
+  opacity: 50;
+}
+.goto-member {
+  margin-top: 400px;
+  // outline: 2px solid rgb(46, 15, 221);
+}
+@media (max-width: 770px) {
+  .phonecase-fram {
+    width: 100%;
+    height: auto;
+    // outline: 2px solid rgb(46, 15, 221);
+  }
+  .result-fram-phone {
+    width: 100%;
+    height: 150px;
+    // background-color: rgb(230, 66, 66);
+  }
+  .result-fram-phone-btn {
+    margin-top: 40px;
+  }
+  .result-fram-phone-img {
+    justify-content: center;
+    width: 125px;
+    height: 130px;
+    background: url($MYPORT + "/img/coupons/clock.png") no-repeat;
+    margin-bottom: 40px;
+  }
+  .result-fram-phone-time {
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 10px;
+  }
+  .result-fram-phone-socer {
+    margin-top: 10px;
+    width: 125px;
+    height: 90px;
+    text-align: center;
+  }
+  .socer-text {
+  }
+  .socer {
+    font-size: 30px;
+    border: #707070bb 2px solid;
+    border-radius: 10%;
+  }
+}
